@@ -50,6 +50,7 @@ def get_logger() -> logging.Logger:
     logger.addHandler(stream_handler)
     return logger
 
+
 def get_db() -> mysql.connector.connection.MySQLConnection:
     """ Implement db conectivity """
     psw = os.environ.get("PERSONAL_DATA_DB_PASSWORD", "")

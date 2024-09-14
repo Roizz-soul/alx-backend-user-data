@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """ Module for filtered logger """
 import logging
+import mysql.connector
+import os
 import re
 from typing import List
 

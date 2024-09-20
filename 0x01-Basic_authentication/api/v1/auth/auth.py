@@ -17,8 +17,8 @@ class Auth:
             return False
         if path + "/" in excluded_paths:
             return False
-        for i in exculded_paths:
-            if i.startswith(path):
+        for i in excluded_paths:
+            if path.startswith(i.split("*")[0]):
                 return False
         if path not in excluded_paths:
             return True

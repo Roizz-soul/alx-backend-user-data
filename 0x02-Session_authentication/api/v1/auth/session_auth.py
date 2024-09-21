@@ -32,3 +32,4 @@ class SessionAuth(Auth):
         cooki = self.session_cookie(request)
         user_id = self.user_id_for_session_id(cooki)
         return User.get(user_id)
+    def
